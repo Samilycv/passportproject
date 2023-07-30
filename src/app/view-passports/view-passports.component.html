@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <h1 class="text-center my-3">View Passport Details</h1>
+        <div class="col-6">
+            <!-- view details -->
+            <ul class="list-group">
+                <li class="list-group-item active mt-5" aria-current="true">ID: {{passport.id}}</li>
+                <li class="list-group-item">Name: {{passport.name}}</li>
+                <li class="list-group-item">Passport Number: {{passport.passportno}}</li>
+                <li class="list-group-item">Place Of Issue: {{passport.place}}</li>
+                <li class="list-group-item">Email: {{passport.email}}</li>
+                <li class="list-group-item">Phone number: {{passport.phone}}</li>
+                <li class="list-group-item">Nationality: {{groupName}}</li>
+              </ul>
+            <!-- Redirected to main page -->
+            <button routerLink="/" class="btn btn-primary ms-3 my-5">Back To Home</button>
+        </div>
+        <div class="col-6">
+            <!-- Image -->
+            <img width="100%" height="500px" [src]="passport.photourl" alt="">
+        </div>
+    </div>
+</div>

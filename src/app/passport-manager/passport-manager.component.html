@@ -1,0 +1,56 @@
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.godigit.com/content/dam/godigit/directportal/en/passport.png" class="d-block w-100"
+        alt="...">
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://iamcheated.indianmoney.com/uploads/ArticleImages/10-new-visa-rules-indian-passport-holders-need-to-know-09012018180436.gif"
+        class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-8">
+      <input (keyup)="search($event)" type="text" placeholder="Search Passport" class="form-control w-75 fw-bold">
+    </div>
+    <div class="col-4">
+      <button class="btn btn-primary" style="float: right;" routerLink="addPassports">New Passport</button>
+    </div>
+  </div>  
+</div>
+<h4 id="pass">Existing Passport Details</h4>
+
+<!-- String Interpolation -->
+<!-- {{allPassports|json}} -->
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-6" *ngFor="let passport of allPassports |filter:searchKey:'name'">
+    <div class="card m-3" style="width: 20rem;">
+      <img width="200px" height="200px" [src]="passport.photourl" class="card-img-top" alt="...">
+      <ul class="list-group list-group-flush mt-3">
+        <li class="list-group-item"><span class="fw-bold">Name: </span>{{passport.name}}</li>
+        <li class="list-group-item"><span class="fw-bold">Passport Number: </span>{{passport.passportno}}</li>
+        <li class="list-group-item"><span class="fw-bold">Place Of Issue: </span>{{passport.place}}</li>
+      </ul>
+      <div class="row mt-2 mb-3">
+        <div class="col-12 d-flex justify-content-evenly">
+          <a routerLink="/passportManager/view/{{passport.id}}" class="btn btn-success m-2" title="View Passport"><i class="fa-sharp fa-solid fa-eye"></i>&nbsp;&nbsp;View</a>
+          <a routerLink="/passportManager/edit/{{passport.id}}" class="btn btn-primary m-2" title="Update Passport"><i class="fa-sharp fa-solid fa-pen "></i>&nbsp;&nbsp;Update</a>
+          <button (click)="deletePassport(passport.id)" class="btn btn-danger m-2" title="Delete Passport"><a routerLink=""></a><i class="fa-sharp fa-solid fa-trash"></i>&nbsp;&nbsp;Delete </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.card{
+    box-shadow:  0 0 30px #393535;
+    border-radius: 25px;
+    transition: 1s;
+}
+.card:hover{
+
+    box-shadow:  10px 10px 30px rgb(19, 21, 21);
+}
+
+#pass {
+    text-align: center;
+    margin-top: 60px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+}

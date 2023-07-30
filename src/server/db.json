@@ -1,0 +1,58 @@
+{
+  "passports": [
+    {
+      "GroupId": "1",
+      "id": "P01",
+      "name": "Alice M",
+      "passportno": "LP002536",
+      "place": "Kochi",
+      "photourl": "https://media.istockphoto.com/id/856599656/photo/passport-picture-of-a-smiling-turkish-businesswoman.jpg?s=612x612&w=0&k=20&c=dgETy-9neViQs7SATDTOOa80QOhVFcLIomBFRxWVN_8=",
+      "email": "aforalice@gmail.com",
+      "phone": "8974556321"
+    },
+    {
+      "GroupId": "2",
+      "id": "P02",
+      "name": "Kiran M Kumar",
+      "passportno": "QW012589",
+      "place": "Kollam",
+      "photourl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/My-Passport-Size%28Small-Beard%29-1MB.jpg/853px-My-Passport-Size%28Small-Beard%29-1MB.jpg",
+      "email": "kiran@gmail.com",
+      "phone": "9874532165"
+    },
+    {
+      "GroupId": "1",
+      "id": "P03",
+      "name": "Mili Mohan",
+      "passportno": "AZ963254",
+      "place": "Thrissur",
+      "photourl": "https://aarogyamhealth.in/wp-content/uploads/2017/11/PASSPORT-SIZE-PHOTO-NAFISA.jpg",
+      "email": "mili@gmail.com",
+      "phone": "7845663258"
+    },
+    {
+      "GroupId": "3",
+      "id": "P04",
+      "name": "Lucy Anto",
+      "passportno": "GD895542",
+      "place": "Canada",
+      "photourl": "https://femina.wwmindia.com/thumb/content/2021/sep/women-thumb1632797644.jpg?width=1200&height=900",
+      "email": "lucy@gmail.com",
+      "phone": "7896332541"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Indian"
+    },
+    {
+      "id": "2",
+      "name": "Chinese"
+    },
+    {
+      "id": "3",
+      "name": "Canedian"
+    }
+  ]
+}
